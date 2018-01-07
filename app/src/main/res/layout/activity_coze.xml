@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.bick.com.imconnect.CozeActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/liaotiantou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#393A3F"
+        >
+        <ImageView
+            android:id="@+id/liao_img_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="-10dp"
+            android:padding="13dp"
+            android:src="@mipmap/fanhuifinish"
+            />
+        <ImageView
+            android:id="@+id/liao_img_userIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="13dp"
+            android:layout_marginLeft="-5dp"
+            android:src="@mipmap/user_bar"/>
+
+        <ImageView
+            android:id="@+id/liaotian_gang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/liao_img_finish"
+            android:padding="4dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/shuxian2"/>
+
+        <TextView
+            android:id="@+id/liao_img_userName"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="用户名"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@id/liaotian_gang"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sendxiall"
+        android:layout_below="@id/liaotiantou"
+         >
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mTvAvailableCharNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sss"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sendxiall"
+        android:layout_below="@id/liaotiantou"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_above="@id/sendxiall"/>
+
+    <RelativeLayout
+        android:id="@+id/sendxiall"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:id="@+id/liao_rlx_s_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xiaoxi_iv_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/yuyin2"/>
+
+        <EditText
+            android:id="@+id/coze_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/xiaoxi_iv_yuyin"
+            android:hint="输入内容"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/xiaoxi_iv_biaoqing"
+            android:theme="@style/MyEditText"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="3dp"/>
+
+        <Button
+            android:id="@+id/coze_context_yuyin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_toRightOf="@id/xiaoxi_iv_yuyin"
+            android:hint="按住 说话"
+            android:layout_centerVertical="true"
+            android:textColorHint="#555555"
+            android:background="@drawable/speak"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/xiaoxi_iv_biaoqing"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/xiaoxi_iv_biaoqing"
+            android:layout_toLeftOf="@id/xiaoxi_btn_send"
+            android:layout_width="60dp"
+            android:padding="9dp"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:src="@mipmap/xiaolian2"/>
+        <Button
+            android:id="@+id/xiaoxi_btn_send"
+            android:onClick="coze_send"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="#009944"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:text="发送"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:textSize="19sp"/>
+        <ImageView
+            android:id="@+id/xiaoxi_btn_sendivjia"
+            android:onClick="coze_send"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/jiahao"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ccc"/>
+
+    </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/liao_vp_qita"
+            android:layout_below="@id/liao_rlx_s_rel"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-10dp"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

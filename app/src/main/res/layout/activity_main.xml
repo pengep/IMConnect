@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.bick.com.imconnect.MainActivity"
+    android:background="@mipmap/timg"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/et_Zhu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_hintName"
+        />
+    <EditText
+        android:id="@+id/et_Zhu_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_hintPwd"
+        />
+
+    <Button
+        android:onClick="zhu_Liji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_zhuce"/>
+
+
+</LinearLayout>

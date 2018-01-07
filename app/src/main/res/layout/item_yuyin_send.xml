@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/messend_item_iconiv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/icon_user"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/messend_item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/messend_item_tv"
+        android:layout_marginRight="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:text="时间"/>
+    <TextView
+        android:id="@+id/messend_item_tv"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/chat_send"
+        android:textColor="#fff"
+        android:layout_centerVertical="true"
+        android:drawableRight="@mipmap/yuyinffffff22"
+        android:layout_toLeftOf="@id/messend_item_iconiv"
+        android:layout_marginRight="2dp"
+        />
+
+
+</RelativeLayout>

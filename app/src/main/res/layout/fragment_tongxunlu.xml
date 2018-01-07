@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/xiaoxi_tongyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新的朋友"/>
+        <Button
+            android:id="@+id/xiaoxi_addFrend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我添加的朋友"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#00f"
+            android:text="好友列表管理"/>
+
+        <view.xlistview.XListView
+            android:id="@+id/tongxun_xlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </view.xlistview.XListView>
+
+</LinearLayout>

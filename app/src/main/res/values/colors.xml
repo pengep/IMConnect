@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="select">#303f9f</color>
+    <color name="nomore">#000</color>
+
+    <color name="mYcolorPrimaryDark">#222222</color>
+
+    <color name="home_text_select">#46C01B</color>
+    <color name="home_text_nomore">#8A8A8A</color>
+    <color name="home_text_zhibo">#E15543</color>
+
+</resources>

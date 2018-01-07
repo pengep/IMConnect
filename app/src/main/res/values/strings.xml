@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">聊聊</string>
+    <string name="app_hintName">请输入用户名</string>
+    <string name="app_hintPwd">请输入密码</string>
+    <string name="app_zhuce">立即注册</string>
+    <string name="app_login">立即登录</string>
+    <string name="app_tui_login">退出用户</string>
+    <string name="app_shuru_context">输入内容</string>
+    <string name="app_send_context">发送</string>
+</resources>
